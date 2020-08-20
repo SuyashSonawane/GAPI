@@ -6,17 +6,17 @@
     <title>Document</title>
   </head>
   <body></body>
-  <!-- <script src="https://cdn.jsdelivr.net/gh/suyashsonawane/gapi/main.js"></script> -->
-  <script src="prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/suyashsonawane/gapi/main.js"></script>
+  <!-- <script src="prod.js"></script> -->
   <script>
-    let gp = new GAPI("suyashsonawane");
-    async function data() {
-      let userData = await gp.getUser();
-      let repoData = await gp.getRepo("GAPI");
-      let orgData = await gp.getOrgs();
-      let orgMembers = await gp.getOrgMembers("devscollab");
-      console.log(userData, repoData, orgData, orgMembers);
-    }
-    data();
+    // let gp = new GAPI("suyashsonawane");
+    // async function data() {
+    //   let userData = await gp.getUser();
+    //   let repoData = await gp.getRepo("GAPI");
+    //   let orgData = await gp.getOrgs();
+    //   let orgMembers = await gp.getOrgMembers("devscollab");
+    //   console.log(userData, repoData, orgData, orgMembers);
+    // }
+    // data();
   </script>
 </html>
