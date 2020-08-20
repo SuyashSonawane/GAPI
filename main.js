@@ -44,10 +44,3 @@ class GAPI {
     });
   }
 }
-
-let a = new GAPI("suyashsonawane");
-// a.getRepo("sbpim")
-//   .then((e) => {
-//     console.log(e);
-//   })
-//   .catch((e) => console.log(e));
