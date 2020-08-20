@@ -43,4 +43,45 @@ class GAPI {
         });
     });
   }
+
+
+  // Get Details of the organization in which the user is currently member
+
+  getOrgs() {
+    return new Promise((resolve, reject) => {
+      if (!this.username) {
+        reject(Error("Invalid Username"));
+      }
+
+      fetch(`https://api.github.com/users/${this.username}/orgs`)
+        .then((data) => {
+          resolve(data.json());
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
+  }
+
+
+
+  /**
+   * Fetch information of a particular organization.
+   * @param {string} org Github Organization to fetch organization details
+   *
+   */
+
+  getOrgMembers(org) {
+    return new Promise((resolve, reject) => {
+      if (!org) reject(Error("Invalid Organization"));
+
+      fetch(`https://api.github.com/orgs/${org}/members`)
+        .then((data) => {
+          resolve(data.json());
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
+  }
 }
