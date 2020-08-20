@@ -7,7 +7,7 @@ Lets you query api.github.com easily
 Add this script to your html file
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/suyashsonawane/gapi/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/suyashsonawane/gapi@latest/main.js"></script>
 ```
 
 ## Usage
